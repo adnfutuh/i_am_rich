@@ -2,9 +2,23 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
-      home: Text(
-        'iam rich',
+    MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey,
+        appBar: AppBar(
+          title: const Text(
+            'i am rich',
+          ),
+          centerTitle: true,
+          backgroundColor: Colors.blueGrey[900],
+        ),
+        body: const Center(
+          child: Image(
+            image: NetworkImage(
+              'https://www.w3schools.com/w3css/img_lights.jpg',
+            ),
+          ),
+        ),
       ),
     ),
   );
